@@ -1,0 +1,27 @@
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+type todolist struct {
+	id          int
+	date        time.Time
+	description string
+	done        bool
+}
+
+func PrintItem(a []string) {
+	fmt.Printf("You entered:\n\t%s", a)
+
+}
+
+}
+func main() {
+	var slice []string
+	fmt.Println("My ToDo List:")
+	slice = append(slice, "Wake Up", "Breakfast")
+
+	fmt.Println(slice)
+}
