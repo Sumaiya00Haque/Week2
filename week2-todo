@@ -1,0 +1,27 @@
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+type todo struct {
+	id   int
+	name string
+	date time.Time
+	//done   bool
+}
+
+func (do todo) print_details() {
+
+	fmt.Printf("ID %d is listed: %s.\n", do.id, do.name)
+	fmt.Printf("THE Time:", do.date)
+}
+
+func main() {
+
+	todolist := todo{1, "wake up", time.Now()}
+
+	todolist.print_details()
+
+}
